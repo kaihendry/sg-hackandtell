@@ -14,7 +14,7 @@ behind it.)
 hijack your event with business or hiring talk.
 
 4. To make the event more useful I created the flea market session 10min before
-the pizza break. People can come to the mic and talk 2 sentences about a new
+the pizza break. People can come to the microphone and talk 2 sentences about a new
 job, request project help or announce an event. This is a good basis for the
 conversations in the break.
 

@@ -1,11 +1,14 @@
-index.html: index.src.html nyc.html berlin.html
+index.html: index.src.html style.css
 	m4 -PEIinc $< > $@
 
-nyc.html: nyc.md
+organisation/index.html: organisation/index.src.html organisation/nyc.html organisation/berlin.html style.css
+	m4 -PEIinc $< > $@
+
+organisation/nyc.html: organisation/nyc.md
 	markdown $< > $@
 
-berlin.html: berlin.md
+organisation/berlin.html: organisation/berlin.md
 	markdown $< > $@
 
 clean:
-	rm -f nyc.html berlin.html index.html
+	rm -f organisation/nyc.html organisation/berlin.html organisation/index.html index.html
