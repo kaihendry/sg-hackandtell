@@ -9,7 +9,7 @@ we've found that many times our sponsors don't say anything about hiring to
 keep with the spirit. It's sort of implied in NYC.
 
 1. 5 minutes/ 5 minutes. Demo followed by discussion. We use
-http://hackandtell.org/timer -- a quick little lighting talk timer that claps
+<http://hackandtell.org/timer> -- a quick little lighting talk timer that claps
 at the end and stick by it. Don't let people go over -- even in mid thought. 
 
 2.  We discourage slides, but sometimes the "hacks" aren't finished or aren't
