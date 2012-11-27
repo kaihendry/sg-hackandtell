@@ -1,3 +1,5 @@
+# New York City guidelines
+
 Hack and Tell NYC is pretty simple and it works well. Here are some major
 points:
 
@@ -26,16 +28,16 @@ to be proud of side projects to encourage more people to do so. Countless
 people come up to me afterwards and say, "I need to find time for some side
 projects." It's very gratifying in that way.
 
-We usually pick 8 or 9 projects. It gets to be too much after that.
+5. We usually pick 8 or 9 projects. It gets to be too much after that.
 
-5. Do yourself a favor and use Meetup (or something like it). I'm not saying
+6. Do yourself a favor and use Meetup (or something like it). I'm not saying
 this because I used to work there. I'm saying it because it Meetup makes it
 trivial to do a lot of the things that would be annoying and very time
 consuming to do otherwise.
 
-6. Be friendly and inviting to newbies and those just learning, but it's OK to
+7. Be friendly and inviting to newbies and those just learning, but it's OK to
 hassle recruiters and people who don't belong. Hackers come first.
 
 I tried to do this thing a while ago where I interviewed people who run
-successful tech groups. The results are here: http://congregating.us -- might
+successful tech groups. The results are here: <http://congregating.us> -- might
 be helpful if you're new to the organizational side of things

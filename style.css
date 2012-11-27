@@ -1,0 +1,36 @@
+body {
+background: #ffffff;
+			font-family: monospace;
+			text-align: center;
+margin: 5em;
+}
+#logo {
+color: #ffffff;
+width: 139px;
+height: 134px;
+		font-size: 3.0em;
+		line-height: 0.0;
+		text-indent: -9999em;
+background: transparent url(images/logo.png) no-repeat;
+padding: 0;
+margin: 70px auto 20px auto;
+}
+h2 {
+color: #999999;
+	   font-weight: normal;
+margin: 0 auto;
+		font-size: 2.5em;
+		text-align: center;
+}
+h2 strong {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-weight: bold;
+color: #333333;
+padding: 0;
+margin: 0;
+}
+.content {
+	text-align: left;
+	max-width: 40em;
+}
+

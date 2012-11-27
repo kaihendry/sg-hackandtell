@@ -1,3 +1,5 @@
+# Berlin guidelines
+
 So Hack&Tell is a format which seems to adapt a bit to the regional flavor but
 there are some core values that should not be changed. Here's how I run it:
 
