@@ -1,3 +1,8 @@
+<style>
+<?php
+include ('style.css');
+?>
+</style>
 <?php
 
 if (empty($_POST["email"])) {
@@ -10,3 +15,5 @@ fclose($fp);
 ?>
 
 <h1>Hey <?php echo $_POST["email"]; ?>, you will be notified of our next event.</h1>
+
+<p><?php system('wc -l < .emails.txt'); ?> signed up so far.</p>
