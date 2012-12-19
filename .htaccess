@@ -4,3 +4,5 @@ Options -Indexes
 Order allow,deny
 Deny from all
 </FilesMatch>
+RewriteEngine On
+RewriteRule ^list/(.*)$ /save.cgi?id=$1               [L,QSA]
