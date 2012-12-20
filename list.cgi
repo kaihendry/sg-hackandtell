@@ -84,6 +84,7 @@ fi
 
 test -f reminder.html && cat reminder.html
 cat <<EOF
+<small><a href="https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi">MIT source</a></small>
 </body>
 </html>
 EOF
