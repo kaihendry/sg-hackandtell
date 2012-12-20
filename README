@@ -1,9 +1,36 @@
-# Does not say whether already subscribed
+# Notes on the list manager [list.cgi](https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi)
 
-Duplicate subscriptions can be handled by sysop. Git save, then:
+Inspired by <http://sivers.org/emailer>. Hinged on [random string](http://stackoverflow.com/questions/13948487). <100 SLOC.
+
+## Does not say whether already subscribed
+
+Duplicate subscriptions can be handled by sysop. Git commit, then:
 
 	awk '!a[$NF]++' subs.txt
+	git diff
 
-# subs directory .htaccess
+## subs/ directory
+
+`subs/.htaccess` reads:
 
 	deny from all
+
+Probably should be on some other non-www path, but where?
+
+`subs/list` is managed in its own private git repository
+
+## Does not send a verification email to say whether one is subscribed or unsubscribed
+
+I don't think this is needed. If it is abused, you should be able to see patterns in the IP column.
+
+## why
+
+When unsubscribing `http://sg.hackandtell.org/list/6b813f10/foobar`, the "foobar"
+should indicate the subject of that correspondence so you know where&why people
+unsubscribed.
+
+## TODO
+
+simple inotifywait process on subs/ to see who has subscribed or unsubscribed
+
+mail tool, that inserts the appropriate unsubscribe link

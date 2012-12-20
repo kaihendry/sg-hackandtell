@@ -1,6 +1,7 @@
 #!/bin/bash
 . ./cgi.sh
 s=subs/list
+u=subs/ulist
 
 # Assuming
 # $CGI_id GET + ?id= = one click unsubscribe
@@ -19,9 +20,12 @@ test "$id" || return 1
 subs=$(grep -m1 -n ^$id $s)
 echo $subs | awk '{print $4}'
 lineno=$(echo $subs | cut -d: -f1)
-if test "$lineno" -gt 0
+if test "$lineno" -gt 0 # test to see if it's a number
 then
-	sed -i "${lineno}d" $s || return 1
+	# Record when they left and why
+	echo $(date +%s) $(echo $subs | awk '{print $3, $4}') $CGI_why >> $u
+	# Delete line
+	sed -i "${lineno}d" $s
 fi
 }
 
@@ -52,7 +56,7 @@ then
 	fi
 	cat <<EOF
 <h3>Thank you for subscribing !</h3>
-<form action="save.cgi" method=get>
+<form action="/list.cgi" method=get>
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address" value="$email"/>
 <input name=id type=hidden value=$id>
 <input name=submit type=submit value="Unsubscribe"/>
@@ -73,7 +77,7 @@ then
 fi
 
 cat <<EOF
-<form action="save.cgi" method=post>
+<form action="/list.cgi" method=post>
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address" value="$email"/>
 <input name=submit type=submit value="Subscribe"/>
 </form>
