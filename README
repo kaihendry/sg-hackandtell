@@ -1,4 +1,5 @@
-Deal with case when already subscribed (grep probably not a good idea as it might expose email addres, backend admin operation = better)
-Normalise email address
-Deal with case for verfication of email /verify/id
-Prettify "Already unsubscribed" case
+# Does not say whether already subscribed
+
+Duplicate subscriptions can be handled by sysop. Git save, then:
+
+	awk '!a[$NF]++' subs.txt
