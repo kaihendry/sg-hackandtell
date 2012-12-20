@@ -36,3 +36,5 @@ unsubscribed.
 simple inotifywait process on subs/ to see who has subscribed or unsubscribed
 
 mail tool, that inserts the appropriate unsubscribe link
+
+	02:17 <greybot> Some sed(1)s have a -i flag that allow you to "modify" files. Sed is NOT A FILE EDITOR: its -i flag does not edit a file, it deletes and re-writes it. Thi s has many problems, including breaking open handles and symlinks. Worse, -i usage is very unportable: your command can break or do bad things on other systems. Use ed(1) , vi(1) or ex(1) instead!

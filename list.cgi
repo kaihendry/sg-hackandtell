@@ -9,7 +9,7 @@ u=subs/ulist
 
 subscribe() {
 rid=$(head -c 4 /dev/urandom | xxd -p)
-echo $rid $(date +%s) $REMOTE_ADDR $CGI_email >> $s
+echo $rid $(date +%s) $REMOTE_ADDR $1 >> $s
 echo $rid
 grep -q "$rid" $s || return 1
 }
@@ -44,11 +44,10 @@ $(cat style.css)
 <body>
 EOF
 
-if test $REQUEST_METHOD = "POST" && test "$CGI_email"
+if test "$REQUEST_METHOD" = "POST" && test "$CGI_email"
 then
-# code that subscribes
-	email=$(echo $CGI_email | tr -dc '[:alnum:].@' | tr '[:upper:]' '[:lower:]')
-	id=$(subscribe $email)
+	email=$(echo "$CGI_email" | tr -dc '[:alnum:].@' | tr '[:upper:]' '[:lower:]')
+	id="$(subscribe "$email")"
 	if test $? -eq 1
 	then
 		echo "<h2>permissions incorrect. chown :www-data $s</h2>"
@@ -70,7 +69,7 @@ else
 
 if test "$CGI_id"
 then
-	email=$(unsubscribe $CGI_id)
+	email=$(unsubscribe "$CGI_id")
 	echo "<h3>We are sorry to see you go $email !</h3>"
 fi
 
