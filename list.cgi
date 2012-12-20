@@ -64,8 +64,6 @@ then
 <p>
 <a href="http://$HTTP_HOST/list/$id">One-click unsubscribe</a>
 </p>
-</body>
-</html>
 EOF
 
 else
@@ -83,3 +81,9 @@ cat <<EOF
 </form>
 EOF
 fi
+
+test -f reminder.html && cat reminder.html
+cat <<EOF
+</body>
+</html>
+EOF

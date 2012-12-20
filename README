@@ -1,6 +1,8 @@
 # Notes on the list manager [list.cgi](https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi)
 
-Inspired by <http://sivers.org/emailer>. Hinged on [random string](http://stackoverflow.com/questions/13948487). <100 SLOC.
+Inspired by <http://sivers.org/emailer> and
+[HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged on [random
+string](http://stackoverflow.com/questions/13948487). <100 SLOC.
 
 ## Does not say whether already subscribed
 
