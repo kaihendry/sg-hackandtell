@@ -3,3 +3,7 @@
 Duplicate subscriptions can be handled by sysop. Git save, then:
 
 	awk '!a[$NF]++' subs.txt
+
+# subs directory .htaccess
+
+	deny from all

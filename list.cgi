@@ -1,5 +1,6 @@
 #!/bin/bash
 . ./cgi.sh
+s=subs/list
 
 # Assuming
 # $CGI_id GET + ?id= = one click unsubscribe
@@ -7,20 +8,20 @@
 
 subscribe() {
 rid=$(head -c 4 /dev/urandom | xxd -p)
-echo $rid $(date +%s) $REMOTE_ADDR $CGI_email >> subs.txt
+echo $rid $(date +%s) $REMOTE_ADDR $CGI_email >> $s
 echo $rid
-grep -q "$rid" subs.txt || return 1
+grep -q "$rid" $s || return 1
 }
 
 unsubscribe() {
 id=$(echo $1 | tr -dc '[:xdigit:]')
 test "$id" || return 1
-subs=$(grep -m1 -n ^$id subs.txt)
+subs=$(grep -m1 -n ^$id $s)
 echo $subs | awk '{print $4}'
 lineno=$(echo $subs | cut -d: -f1)
 if test "$lineno" -gt 0
 then
-	sed -i "${lineno}d" subs.txt || return 1
+	sed -i "${lineno}d" $s || return 1
 fi
 }
 
@@ -46,7 +47,7 @@ then
 	id=$(subscribe $email)
 	if test $? -eq 1
 	then
-		echo "<h2>permissions incorrect. chown -R :www-data .</h2>"
+		echo "<h2>permissions incorrect. chown :www-data $s</h2>"
 		exit
 	fi
 	cat <<EOF
