@@ -9,6 +9,7 @@ subscribe() {
 rid=$(head -c 4 /dev/urandom | xxd -p)
 echo $(date +%s) $REMOTE_ADDR $CGI_email >> subs/$rid
 echo $rid
+test -f "subs/$rid" || return 1
 }
 
 unsubscribe() {
@@ -20,8 +21,6 @@ else
 	echo Already unsubscribed
 fi
 }
-
-
 
 cat <<EOF
 Content-type: text/html
@@ -42,6 +41,11 @@ if test $REQUEST_METHOD = "POST" && test "$CGI_email"
 then
 # code that subscribes
 	id=$(subscribe $CGI_email)
+	if test $? -eq 1
+	then
+		echo "<h2>permissions incorrect. chown -R :www-data .</h2>"
+		exit
+	fi
 	cat <<EOF
 <h3>Thank you for subscribing !</h3>
 <form action="save.cgi" method=get>
