@@ -5,4 +5,4 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 RewriteEngine On
-RewriteRule ^list/([-A-z0-9]+)/?(.*)$ /list.cgi?id=$1&why=$2 [L,QSA]
+RewriteRule ^list/([-A-z0-9]+)/?(.*)$ /list.php?id=$1&why=$2 [L,QSA]
