@@ -1,10 +1,19 @@
-# Notes on the list manager [list.cgi](https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi)
+# Notes on the list manager, a "suck less" feedburner
+
+Designed for low volume announcements, with emails generated from a RSS feed
+ideally.
+
+* [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi)
+* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/listmail)
 
 Inspired by <http://sivers.org/emailer> and
-[HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged on [random
-string](http://stackoverflow.com/questions/13948487). <100 SLOC.
+[HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged upon [random
+strings](http://stackoverflow.com/questions/13948487). Very low SLOC, aims to
+be [suck less](http://suckless.org).
 
 ## Does not say whether already subscribed
+
+Not leaking who or who is not subscribed.
 
 Duplicate subscriptions can be handled by sysop. Git commit, then:
 
@@ -23,18 +32,21 @@ Probably should be on some other non-www path, but where?
 
 ## Does not send a verification email to say whether one is subscribed or unsubscribed
 
-I don't think this is needed. If it is abused, you should be able to see patterns in the IP column.
+I don't think this is needed. If subscription is abused, you should be able to see patterns in the IP column.
 
-## why
+## Reason why unsubscribed
+
+	http://$domain/list/$id/$reason
 
 When unsubscribing `http://sg.hackandtell.org/list/6b813f10/foobar`, the "foobar"
 should indicate the subject of that correspondence so you know where&why people
 unsubscribed.
 
+## Example of where to subscribe
+
+<http://sg.hackandtell.org/list.cgi>
+
 ## TODO
 
-simple inotifywait process on subs/ to see who has subscribed or unsubscribed
-
-mail tool, that inserts the appropriate unsubscribe link
-
-	02:17 <greybot> Some sed(1)s have a -i flag that allow you to "modify" files. Sed is NOT A FILE EDITOR: its -i flag does not edit a file, it deletes and re-writes it. Thi s has many problems, including breaking open handles and symlinks. Worse, -i usage is very unportable: your command can break or do bad things on other systems. Use ed(1) , vi(1) or ex(1) instead!
+* Simple inotifywait process on subs/ to see who has subscribed or unsubscribed
+* Some automated way to handle bounces
