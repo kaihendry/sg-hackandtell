@@ -22,7 +22,7 @@ if (isset($_POST['id'])) {
 <input name=submit type=submit value="Subscribe"/>
 </form>
 <?php
-include ("../reminder.html");
+include ("reminder.html");
 ?>
 <small><a href="https://github.com/kaihendry/sg-hackandtell">MIT source</a></small>
 </body>

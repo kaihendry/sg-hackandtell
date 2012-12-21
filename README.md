@@ -3,7 +3,7 @@
 Designed for low volume announcements, with emails generated from a RSS feed
 ideally.
 
-* [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/blob/master/list.php)
+* [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/tree/master/list)
 * [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/maillist)
 
 Inspired by <http://sivers.org/emailer> and
@@ -44,7 +44,7 @@ unsubscribed.
 
 ## Example of where to subscribe
 
-<http://sg.hackandtell.org/list.php>
+<http://sg.hackandtell.org>
 
 ## TODO
 

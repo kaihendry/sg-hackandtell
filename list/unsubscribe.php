@@ -25,12 +25,13 @@ if (empty($id)) {
 
 ?>
 <form action="/list/subscribe.php" method=post>
-<input name=why placeholder="Any reason why?" value="<?= $_GET["why"] ?>"/>
+<label for="why">Reason why?</label>
+<input id=why name=why placeholder="Any reason why?" value="<?= $_GET["why"] ?>"/>
 <input name=id type=hidden value=<?= $id ?>>
 <input name=submit type=submit value="Unsubscribe"/>
 </form>
 <?php
-include ("../reminder.html");
+include ("reminder.html");
 ?>
 <small><a href="https://github.com/kaihendry/sg-hackandtell">MIT source</a></small>
 </body>
