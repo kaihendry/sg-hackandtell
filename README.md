@@ -3,8 +3,8 @@
 Designed for low volume announcements, with emails generated from a RSS feed
 ideally.
 
-* [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/blob/master/list.cgi)
-* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/listmail)
+* [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/blob/master/list.php)
+* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/maillist)
 
 Inspired by <http://sivers.org/emailer> and
 [HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged upon [random
@@ -44,7 +44,7 @@ unsubscribed.
 
 ## Example of where to subscribe
 
-<http://sg.hackandtell.org/list.cgi>
+<http://sg.hackandtell.org/list.php>
 
 ## TODO
 

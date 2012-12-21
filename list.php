@@ -1,5 +1,5 @@
 <?php
-$s="subs/testlist";
+$s="subs/list";
 $u="subs/ulist";
 
 function subscribe($email) {
@@ -10,15 +10,14 @@ return $rid;
 }
 
 function unsubscribe($id) {
-echo "<h1>here</h1>";
-global $s;
+global $s, $u;
 $fp = fopen($s, "r");
 while ($row = fgetcsv($fp, 0, " ")) {
-	//print_r($row);
 	if ($id != $row[0]) {
 		$new .= implode(' ', $row) . PHP_EOL;
 	} else {
 		$email = $row[3];
+		file_put_contents($u, "$row[1] $row[2] $row[3] " . trim($_GET[why]) . "\n", FILE_APPEND);
 	}
 }
 fclose($fp);
@@ -40,7 +39,7 @@ include("style.css");
 </head>
 <body>
 <?php
-if (isset($_POST["email"])) {
+if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
 	$email = $_POST["email"];
 	$id=subscribe($email);
 ?>
