@@ -36,9 +36,9 @@ I don't think this is needed. If subscription is abused, you should be able to s
 
 ## Reason why unsubscribed
 
-	http://$domain/list/$id/$reason
+	http://$domain/unsubscribe/$id/$reason
 
-When unsubscribing `http://sg.hackandtell.org/list/6b813f10/foobar`, the "foobar"
+When unsubscribing `http://sg.hackandtell.org/unsubscribe/6b813f10/foobar`, the "foobar"
 should indicate the subject of that correspondence so you know where&why people
 unsubscribed.
 
