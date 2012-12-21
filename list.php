@@ -10,6 +10,7 @@ return $rid;
 }
 
 function unsubscribe($id) {
+// TODO Perhaps lock in case a subscribe comes in at the very same time?
 global $s, $u;
 $fp = fopen($s, "r");
 while ($row = fgetcsv($fp, 0, " ")) {
@@ -30,7 +31,7 @@ return $email;
 <html>
 <head>
 <meta charset="utf-8" />
-<title>email list</title>
+<title>really simple email list</title>
 <style>
 <?php
 include("style.css");
