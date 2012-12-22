@@ -1,35 +1,23 @@
 <?php
-$s="subs/list";
-$u="subs/ulist";
-
 function subscribe($email) {
-global $s;
-$rid=trim(`head -c 4 /dev/urandom | xxd -p`);
-file_put_contents($s, $rid . " " . time() . " " . $_SERVER["REMOTE_ADDR"] . " " . $email . "\n", FILE_APPEND);
-return $rid;
+$id=trim(`head -c 4 /dev/urandom | xxd -p`);
+file_put_contents("subs/$id", time() . " " . $_SERVER["REMOTE_ADDR"] . " " . $email . "\n", FILE_APPEND);
+return $id;
 }
 
 function unsubscribe($id) {
-// TODO Perhaps lock in case a subscribe comes in at the very same time?
-global $s, $u;
-$fp = fopen($s, "r");
+$fp = fopen("subs/$id", "r");
 while ($row = fgetcsv($fp, 0, " ")) {
-	if ($id != $row[0]) {
-		$new .= implode(' ', $row) . PHP_EOL;
-	} else {
-		$email = $row[3];
-		file_put_contents($u, "$row[1] $row[2] $row[3] " . filter_var(trim($_POST[why]), FILTER_SANITIZE_STRING) . "\n", FILE_APPEND);
-	}
+	$email = $row[2];
+	file_put_contents("usubs.csv", "$row[0] $row[1] $row[2] " . filter_var(trim($_POST[why]), FILTER_SANITIZE_STRING) . "\n", FILE_APPEND);
 }
 fclose($fp);
-file_put_contents($s, $new);
+unlink("subs/$id");
 return $email;
 }
 
 function valid_id($id) {
-if (ctype_xdigit($id) && strlen($id) == 8) {
-	return true;
-	}
+if (ctype_xdigit($id) && strlen($id) == 8) { return true; }
 return false;
 }
 ?>

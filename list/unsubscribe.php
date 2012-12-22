@@ -17,13 +17,13 @@ if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
 	$email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 	$id=subscribe($email);
 	echo "<h3 class=sub>Thank you for subscribing $email !</h3>";
-}
+} else { die("<h1 class=un>Invalid email</h1>"); }
 
 if (empty($id)) {
 	if (valid_id($_GET["id"])) {
 	$id = $_GET["id"];
 	} else {
-		die("<h1>Invalid ID</h1>");
+		die("<h1 class=un>Invalid ID</h1>");
 	}
 }
 
