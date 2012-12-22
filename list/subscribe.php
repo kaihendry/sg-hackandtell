@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>foo really simple email list</title>
+<title>really simple email list</title>
 <style>
 <?php
 include("../style.css");
@@ -12,9 +12,10 @@ include("../style.css");
 <body>
 <?php
 include("list-funcs.php");
-if (isset($_POST['id'])) {
+
+if (valid_id($_POST['id'])) {
 	$email=unsubscribe($_POST['id']);
-	echo "<h3>We are sorry to see you go $email !</h3>";
+	echo "<h3 class=un>$email you have been unsubscribed!</h3>";
 }
 ?>
 <form action="/list/unsubscribe.php" method=post>
@@ -24,6 +25,5 @@ if (isset($_POST['id'])) {
 <?php
 include ("reminder.html");
 ?>
-<small><a href="https://github.com/kaihendry/sg-hackandtell">MIT source</a></small>
 </body>
 </html>

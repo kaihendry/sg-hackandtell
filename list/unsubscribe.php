@@ -14,25 +14,28 @@ include("../style.css");
 include("list-funcs.php");
 
 if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-	$email = $_POST["email"];
+	$email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
 	$id=subscribe($email);
-	echo "<h3>Thank you for subscribing $email !</h3>";
+	echo "<h3 class=sub>Thank you for subscribing $email !</h3>";
 }
 
 if (empty($id)) {
+	if (valid_id($_GET["id"])) {
 	$id = $_GET["id"];
+	} else {
+		die("<h1>Invalid ID</h1>");
+	}
 }
 
 ?>
 <form action="/list/subscribe.php" method=post>
 <label for="why">Reason why?</label>
-<input id=why name=why placeholder="Any reason why?" value="<?= $_GET["why"] ?>"/>
+<input id=why name=why placeholder="Any reason why?" value="<?= htmlspecialchars($_GET[why], ENT_QUOTES, 'UTF-8'); ?>"/>
 <input name=id type=hidden value=<?= $id ?>>
-<input name=submit type=submit value="Unsubscribe"/>
+<input name=submit type=submit value="1-click Unsubscribe"/>
 </form>
 <?php
 include ("reminder.html");
 ?>
-<small><a href="https://github.com/kaihendry/sg-hackandtell">MIT source</a></small>
 </body>
 </html>

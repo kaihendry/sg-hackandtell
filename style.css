@@ -26,3 +26,5 @@ margin: 0 auto;
 	text-align: left;
 	max-width: 40em;
 }
+.sub { color: green; }
+.un { color: red; }
