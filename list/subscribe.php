@@ -14,9 +14,11 @@ include("../style.css");
 include("list-funcs.php");
 
 // Allow GET for List-Unsubscribe: direct unsubscribes http://news.ycombinator.com/item?id=4930107
+if ($_REQUEST['id']) {
 if (valid_id($_REQUEST['id'])) {
 	$email=unsubscribe($_REQUEST['id']);
 	echo "<h3 class=un>$email you have been unsubscribed!</h3>";
+} else { die("<h1 class=un>Invalid unsubscription ID</h1>"); }
 }
 
 ?>

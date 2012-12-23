@@ -25,20 +25,28 @@ if (empty($id)) {
 	if (valid_id($_GET["id"])) {
 	$id = $_GET["id"];
 	} else {
-		die("<h1 class=un>Invalid unsubscripton ID</h1>");
+		die("<h1 class=un>Invalid unsubscription ID</h1>");
 	}
 }
 
 ?>
 <form action="/list/subscribe.php" method=post>
 <label for="why">Reason why?</label>
-<input id=why name=why size=30 placeholder="Any reason why?" value="<?= htmlspecialchars($_GET[why], ENT_QUOTES, 'UTF-8'); ?>"/>
+<input onkeyup="setOneClick(this.value);" id=why name=why size=30 placeholder="Any reason why?" value="<?= htmlspecialchars($_GET[why], ENT_QUOTES, 'UTF-8'); ?>"/>
 <input name=id type=hidden value=<?= $id ?>>
 <input name=submit type=submit value="1-click Unsubscribe"/>
 </form>
 <?php
-echo "<p><a href=http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id>http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id</a></p>";
+echo "<p><a id=oneclick href=http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id>http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id</a></p>";
 include ("reminder.html");
 ?>
+<script>
+var l = document.getElementById('oneclick');
+var orig = l.getAttribute('href');
+function setOneClick(why) {
+l.setAttribute('href', orig + "/" + why);
+l.innerHTML = orig + "/" + why;
+}
+</script>
 </body>
 </html>
