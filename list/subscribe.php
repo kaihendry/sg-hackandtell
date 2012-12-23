@@ -13,13 +13,16 @@ include("../style.css");
 <?php
 include("list-funcs.php");
 
-if (valid_id($_POST['id'])) {
-	$email=unsubscribe($_POST['id']);
+// Allow GET for List-Unsubscribe: direct unsubscribes http://news.ycombinator.com/item?id=4930107
+if (valid_id($_REQUEST['id'])) {
+	$email=unsubscribe($_REQUEST['id']);
 	echo "<h3 class=un>$email you have been unsubscribed!</h3>";
 }
+
 ?>
 <form action="/list/unsubscribe.php" method=post>
-<input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address" value="<?= $email ?>"/>
+<label for="email">Email address</label>
+<input id=email required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address" value="<?= $email ?>"/>
 <input name=submit type=submit value="Subscribe"/>
 </form>
 <?php

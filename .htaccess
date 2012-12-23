@@ -6,3 +6,4 @@ Deny from all
 </FilesMatch>
 RewriteEngine On
 RewriteRule ^unsubscribe/([-A-z0-9]+)/?(.*)$ /list/unsubscribe.php?id=$1&why=$2 [L,QSA]
+RewriteRule ^1-click-unsubscribe/([-A-z0-9]+)/?(.*)$ /list/subscribe.php?id=$1&why=$2 [L,QSA]
