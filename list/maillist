@@ -1,5 +1,7 @@
 #!/bin/bash
 # Designed to send off your blogs that no one can be bothered to setup a RSS feeder with
+# Pipe from mutt
+
 domain="sg.hackandtell.org"
 
 tmp=$(tempfile)
@@ -17,7 +19,7 @@ do
 	echo "<hr>"
 	echo "<footer>"
 	cat reminder.html
-	echo "<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject)>http://$domain/unsubscribe/$id/$subject</a></p>"
+	echo "<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject>http://$domain/unsubscribe/$id/$subject</a></p>"
 	echo "</footer>"
 	} |
 	mutt -e "set content_type=text/html" -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
