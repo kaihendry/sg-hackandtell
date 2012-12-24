@@ -1,8 +1,9 @@
+<?php header("Cache-Control: no-store"); ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>really simple email list</title>
+<title>really simple announce list</title>
 <style>
 <?php
 include("../style.css");

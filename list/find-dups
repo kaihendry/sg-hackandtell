@@ -1,0 +1,11 @@
+#!/bin/bash
+tmp=$(tempfile)
+sorted=$(tempfile)
+for i in subs/*
+do
+	echo $(basename $i) $(cat $i) >> $tmp
+done
+sort -k3 $tmp > $sorted
+sort -u -k3 $sorted > $tmp
+diff -u $tmp $sorted
+rm -f $tmp $sorted
