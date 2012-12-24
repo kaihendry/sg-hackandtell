@@ -5,7 +5,7 @@
 domain="sg.hackandtell.org"
 
 tmp=$(tempfile)
-cat > $tmp
+cat | sed 's,URL: \(.*\),URL: <\1>,'  > $tmp # for bottom r2e line for markdown
 subject="$(grep -m 1 '^Subject: ' $tmp | sed 's/^Subject: *//')"
 esubject="$(php -r "echo rawurlencode('$subject');")"
 

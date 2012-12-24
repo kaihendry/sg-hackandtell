@@ -1,21 +1,27 @@
 # Notes on the list manager, a "suck less" feedburner
 
-Designed for low volume announcements, with emails generated from a RSS feed
-ideally.
+For low volume announcements, with emails generated from a RSS feed ideally.
 
 * [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/tree/master/list)
-* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/list/maillist)
+* [Script that sends the emails with unsubscribe link in footer and header](https://github.com/kaihendry/sg-hackandtell/blob/master/list/maillist)
 
 Inspired by <http://sivers.org/emailer> and
 [HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged upon [random
 strings](http://stackoverflow.com/questions/13948487). Very low SLOC, aims to
 be [suck less](http://suckless.org).
 
-* Direct GET for list-unsubscribe: and POST otherwise
+* Direct GET /unsub/$id/$reason for list-unsubscribe: mail header and POST otherwise from /unsubscribe/$id/$reason
+
+# Why use this over Campaign Monitor, madmimi, Mail Chimp, Feedburner, Dreamhost announce et al?
+
+* Implements RFC 2369 `List-Unsubscribe:`
+* Writes down reasons for leaving in `usubs.private`
+* More control and simpler
+* MIT licensed
 
 ## subs/ directory
 
-`subs/.htaccess` reads:
+`subs/.htaccess` must read:
 
 	deny from all
 
@@ -33,7 +39,7 @@ When unsubscribing `http://sg.hackandtell.org/unsubscribe/6b813f10/foobar`, the 
 should indicate the subject of that correspondence so you know where&why people
 unsubscribed.
 
-## Example of where to subscribe
+## Demonstration
 
 <http://sg.hackandtell.org>
 
