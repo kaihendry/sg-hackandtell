@@ -38,7 +38,7 @@ if (empty($id)) {
 <input name=submit type=submit value="1-click Unsubscribe"/>
 </form>
 <?php
-echo "<p><a id=oneclick href=http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id>http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id</a></p>";
+echo "<p><a id=oneclick href=http://$_SERVER[HTTP_HOST]/unsub/$id>http://$_SERVER[HTTP_HOST]/1-click-unsubscribe/$id</a></p>";
 include ("reminder.html");
 ?>
 <script>
@@ -48,6 +48,7 @@ function setOneClick(why) {
 l.setAttribute('href', orig + "/" + why);
 l.innerHTML = orig + "/" + why;
 }
+setOneClick(document.getElementById('why').value);
 </script>
 </body>
 </html>
