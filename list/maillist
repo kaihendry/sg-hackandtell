@@ -3,6 +3,7 @@
 # Pipe from mutt
 
 domain="sg.hackandtell.org"
+replyto="singapore@hackandtell.org"
 
 tmp=$(tempfile)
 cat | sed 's,URL: \(.*\),URL: <\1>,'  > $tmp # for bottom r2e line for markdown
@@ -22,7 +23,9 @@ do
 	echo "<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject>http://$domain/unsubscribe/$id/$subject</a></p>"
 	echo "</footer>"
 	} |
-	mutt -e "set content_type=text/html" -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
+	mutt -e "set content_type=text/html" \
+		 -e "my_hdr Reply-To: $replyto" \
+		 -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
 	if test "$?" -eq 0
 	then
 		echo OK $email
