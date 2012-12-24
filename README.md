@@ -4,21 +4,14 @@ Designed for low volume announcements, with emails generated from a RSS feed
 ideally.
 
 * [Code that manages the list](https://github.com/kaihendry/sg-hackandtell/tree/master/list)
-* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/maillist)
+* [Code that sends the emails](https://github.com/kaihendry/sg-hackandtell/blob/master/list/maillist)
 
 Inspired by <http://sivers.org/emailer> and
 [HackerNews](http://news.ycombinator.com/item?id=4929997). Hinged upon [random
 strings](http://stackoverflow.com/questions/13948487). Very low SLOC, aims to
 be [suck less](http://suckless.org).
 
-## Does not say whether already subscribed
-
-Not leaking who or who is not subscribed.
-
-Duplicate subscriptions can be handled by sysop. Git commit, then:
-
-	awk '!a[$NF]++' subs.txt
-	git diff
+* Direct GET for list-unsubscribe: and POST otherwise
 
 ## subs/ directory
 
@@ -27,8 +20,6 @@ Duplicate subscriptions can be handled by sysop. Git commit, then:
 	deny from all
 
 Probably should be on some other non-www path, but where?
-
-`subs/list` is managed in its own private git repository
 
 ## Does not send a verification email to say whether one is subscribed or unsubscribed
 
