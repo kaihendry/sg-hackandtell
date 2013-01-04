@@ -5,16 +5,16 @@
 domain="sg.hackandtell.org"
 replyto="singapore@hackandtell.org"
 
-tmp=$(tempfile)
+tmp=$(mktemp)
 cat | sed 's,URL: \(.*\),URL: <\1>,'  > $tmp # for bottom r2e line for markdown
 subject="$(grep -m 1 '^Subject: ' $tmp | sed 's/^Subject: *//')"
 esubject="$(php -r "echo rawurlencode('$subject');")"
 
 for i in subs/*
 do
-	echo $(basename $i) $(cat $i)
+	echo $(basename $i) $(awk '{print $NF}' $i)
 done | grep hendry $list | # replace hendry with . when you want to send it off
-while read id IP email
+while read id email
 do
 	{ sed '1,/^$/d' $tmp | markdown
 	echo "<hr>"
@@ -28,7 +28,7 @@ do
 		 -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
 	if test "$?" -eq 0
 	then
-		echo OK $email
+		echo OK $id $email
 	else
 		echo ERROR $email http://$domain/unsub/$id/failed-to-send
 	fi

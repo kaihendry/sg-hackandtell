@@ -3,9 +3,9 @@ tmp=$(tempfile)
 sorted=$(tempfile)
 for i in subs/*
 do
-	echo $(basename $i) $(cat $i) >> $tmp
+	echo $(basename $i) $(awk '{print $NF}' $i) >> $tmp
 done
-sort -k3 $tmp > $sorted
-sort -u -k3 $sorted > $tmp
+sort -k2 $tmp > $sorted
+sort -u -k2 $sorted > $tmp
 diff -u $tmp $sorted
 rm -f $tmp $sorted
