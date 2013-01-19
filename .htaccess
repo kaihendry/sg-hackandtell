@@ -1,5 +1,4 @@
 DirectoryIndex index.html index.txt
-Options -Indexes
 <FilesMatch "^\.">
 Order allow,deny
 Deny from all
