@@ -1,4 +1,5 @@
-DirectoryIndex index.html index.txt
+DirectoryIndex index.html index.txt index.php
+Options -Indexes
 <FilesMatch "^\.">
 Order allow,deny
 Deny from all
