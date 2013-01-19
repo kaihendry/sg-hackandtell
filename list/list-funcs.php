@@ -1,7 +1,7 @@
 <?php
 function subscribe($email) {
-if (! is_writable("subs/$id")) { return false; }
 $id=trim(`head -c 4 /dev/urandom | xxd -p`);
+if (! is_writable("subs/$id")) { return false; }
 file_put_contents("subs/$id", gethostbyaddr($_SERVER["REMOTE_ADDR"]) . " " . $_SERVER['HTTP_REFERER'] . " " . $email . "\n", FILE_APPEND);
 return $id;
 }
