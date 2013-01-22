@@ -1,7 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//lanyrd.com//Lanyrd//EN
-X-ORIGINAL-URL:http://lanyrd.com/2013/hacktell-singapore/hacktell-singapore.ics
+X-ORIGINAL-URL:http://sg.hackandtell.org/ics/
 X-WR-CALNAME;CHARSET=utf-8:Hack&Tell Singapore
 METHOD:PUBLISH
 X-MS-OLK-FORCEINSPECTOROPEN:TRUE
