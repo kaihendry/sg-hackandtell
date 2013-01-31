@@ -1,0 +1,21 @@
+<script src="/js/showdown.js"></script>
+<textarea style="display:none">
+* Stephan February
+* [Michael Cheng](https://www.facebook.com/media/set/?set=a.10151385054432229.502084.503517228&type=1)
+* [Patrick Haller](http://haller.ws/) - [Personal Space](http://haller.ws/projects/personal-space/)
+* Wye Yeh Tan - <http://www.savecycling.com/>
+* Zhen Yuan - The elastic band gun(s)
+* Wyemun Chin - [Starcraft 2 game viewer with build order and chat](http://www.wyemun.com/pgc/index.php/watch/getCast/1)
+* Kai Elvin - <http://kaielvin.org/memory>
+* Kai Hendry - [suckless graphs](https://github.com/kaihendry/sg)
+* [Scott Lawrence](http://quadhome.com/) - [Test invaders](https://github.com/quad/testinvaders)
+* [Lim Chee Aun](https://twitter.com/cheeaun)
+</textarea>
+<script>
+var textarea = document.getElementsByTagName('textarea')[0]
+var converter = new Showdown.converter();
+var html = converter.makeHtml(textarea.value);
+preview = document.createElement('div');
+textarea.parentNode.insertBefore(preview, textarea.nextSibling);
+preview.innerHTML = html;
+</script>
