@@ -1,7 +1,8 @@
 <?php
 function subscribe($email) {
 $id=trim(`head -c 4 /dev/urandom | xxd -p`);
-file_put_contents("subs/$id", gethostbyaddr($_SERVER["REMOTE_ADDR"]) . " " . $_SERVER['HTTP_REFERER'] . " " . $email . "\n", FILE_APPEND);
+$res = file_put_contents("subs/$id", gethostbyaddr($_SERVER["REMOTE_ADDR"]) . " " . $_SERVER['HTTP_REFERER'] . " " . $email . "\n", FILE_APPEND);
+if ($res === false) { die("Could not write to disk. Bad permissions?"); }
 return $id;
 }
 
