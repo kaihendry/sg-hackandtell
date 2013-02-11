@@ -14,6 +14,7 @@ height: 134px;
 background: transparent url(/images/logo.png) no-repeat;
 padding: 0;
 margin: 70px auto 20px auto;
+
 }
 h2 {
 color: #999999;
@@ -21,6 +22,7 @@ color: #999999;
 margin: 0 auto;
 		font-size: 2.5em;
 		text-align: center;
+
 }
 .content {
 	text-align: left;

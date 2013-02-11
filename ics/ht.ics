@@ -1,18 +1,18 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//lanyrd.com//Lanyrd//EN
-X-ORIGINAL-URL:http://sg.hackandtell.org/ics/
+X-ORIGINAL-URL:http://lanyrd.com/2013/hacktell-singapore/hacktell-singapore.ics
 X-WR-CALNAME;CHARSET=utf-8:Hack&Tell Singapore
 METHOD:PUBLISH
 X-MS-OLK-FORCEINSPECTOROPEN:TRUE
 BEGIN:VEVENT
 SUMMARY;CHARSET=utf-8:Hack&Tell Singapore
-LOCATION;CHARSET=utf-8:HackerspaceSG, 70A Bussorah Street, 199483
+LOCATION;CHARSET=utf-8:HackerspaceSG\, 70A Bussorah Street\, 199483
 URL:http://lanyrd.com/2013/hacktell-singapore/
 UID:eb4aaf772ca064e6c815092672c872a18e98bee4
 DESCRIPTION:Please come\, support and share what neat "hack" you have been working on.\n\nhttp://lanyrd.com/ckzrt
-DTSTART:20130129T110000Z
-DTEND:20130129T130000Z
+DTSTART:20130305T110000Z
+DTEND:20130305T130000Z
 GEO:1.30079954417;103.860102941
 END:VEVENT
 END:VCALENDAR
