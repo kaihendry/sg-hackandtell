@@ -10,44 +10,74 @@ background: #ffffff;
 			text-align: center;
 margin: 5em;
 }
-#logo {
-color: #ffffff;
-width: 139px;
-height: 134px;
-		font-size: 3.0em;
-		line-height: 0.0;
-		text-indent: -9999em;
-background: transparent url(/images/logo.png) no-repeat;
-padding: 0;
-margin: 70px auto 20px auto;
 
-}
-h2 {
-color: #999999;
-	   font-weight: normal;
-margin: 0 auto;
-		font-size: 2.5em;
-		text-align: center;
-
-}
 .content {
 	text-align: left;
 	max-width: 40em;
 }
-.sub { color: green; }
-.un { color: red; }
+
+.sub {
+color: green;
+}
+
+.un {
+color: red;
+}
+
+h2 {
+	-moz-animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+	-moz-animation-name: slidein;
+	-webkit-animation-name: slidein;
+}
+
+@-moz-keyframes slidein {
+	from {
+		margin-left:100%;
+width:300%
+	}
+
+	75% {
+		font-size:300%;
+		margin-left:25%;
+width:150%;
+	}
+
+	to {
+		margin-left:0%;
+width:100%;
+	}
+}
+
+@-webkit-keyframes slidein {
+	from {
+		margin-left:100%;
+width:300%
+	}
+
+	75% {
+		font-size:300%;
+		margin-left:25%;
+width:150%;
+	}
+
+	to {
+		margin-left:0%;
+width:100%;
+	}
+}
 
 </style>
 <title>Singapore Hack&amp;Tell</title>
 </head>
 <body>
 
-<h1 id="logo">Show and tell for Hackers</h1>
+<img alt="Show and tell for Hackers" src="/images/logo.png">
 
 <h2 id="when">Next event: March 5th 2013</h2>
 <h2 id="where">Singapore Hackerspace</h2>
 
-<p>iCalendar, Add by URL: <textarea disabled>http://sg.hackandtell.org/ics</textarea></p>
+<p>iCalendar, Add by URL: http://sg.hackandtell.org/ics</p>
 
 <form action="list/unsubscribe.php" method=post>
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address"/>
