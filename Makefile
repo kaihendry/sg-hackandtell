@@ -1,14 +1,14 @@
-index.html: index.src.html style.css map.js
-	m4 -PEIinc $< > $@
+INFILES = $(shell find . -name "*.mdwn")
+OUTFILES = $(INFILES:.mdwn=.html)
 
-organisation/index.html: organisation/index.src.html organisation/nyc.html organisation/berlin.html style.css
-	m4 -PEIinc $< > $@
+all: $(OUTFILES)
 
-organisation/nyc.html: organisation/nyc.md
-	markdown $< > $@
-
-organisation/berlin.html: organisation/berlin.md
-	markdown $< > $@
+%.html: %.mdwn footer.inc header.inc style.css
+	m4 -PEIinc header.inc > $@
+	markdown $< >> $@
+	cat footer.inc >> $@
 
 clean:
-	rm -f organisation/nyc.html organisation/berlin.html organisation/index.html index.html
+	rm -f $(OUTFILES)
+
+PHONY: all clean

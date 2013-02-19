@@ -1,5 +1,3 @@
-<script src="/js/showdown.js"></script>
-<textarea style="display:none">
 * Stephan February - [Aquaponics](http://www.aquaponics.sg)
 * [Michael Cheng](https://www.facebook.com/media/set/?set=a.10151385054432229.502084.503517228&type=1) - [PHP Queue in Action](https://speakerdeck.com/miccheng/php-queue-case-study-islamicevents-dot-sg)
 * [Patrick Haller](http://haller.ws/) - [Personal Space](http://haller.ws/projects/personal-space/)
@@ -11,12 +9,3 @@
 * [Scott Robinson](http://quadhome.com/) - [Test invaders](https://github.com/quad/testinvaders)
 * [Lim Chee Aun](https://twitter.com/cheeaun) - [Singapore bus router](https://github.com/cheeaun/busrouter-sg) - [Source](https://github.com/cheeaun/busrouter-sg)
 * [Ben Hamey](https://twitter.com/Hamey), [Nathan Hamey](https://twitter.com/NathanHamey), [Michael del Borrello](https://twitter.com/mdelbo) - I Will If You Will mobile app
-</textarea>
-<script>
-var textarea = document.getElementsByTagName('textarea')[0]
-var converter = new Showdown.converter();
-var html = converter.makeHtml(textarea.value);
-preview = document.createElement('div');
-textarea.parentNode.insertBefore(preview, textarea.nextSibling);
-preview.innerHTML = html;
-</script>

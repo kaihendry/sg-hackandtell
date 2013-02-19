@@ -1,21 +1,15 @@
 body {
-background: #ffffff;
-			font-family: monospace;
-			text-align: center;
-margin: 5em;
-}
-
-.content {
-	text-align: left;
-	max-width: 40em;
+	background: #ffffff;
+	font-family: monospace;
+	margin: 5em;
 }
 
 .sub {
-color: green;
+	color: green;
 }
 
 .un {
-color: red;
+	color: red;
 }
 
 h2 {
@@ -27,36 +21,32 @@ h2 {
 
 @-moz-keyframes slidein {
 	from {
-		margin-left:100%;
-width:300%
+		margin-left: 100%;
+		width: 300%;
 	}
-
 	75% {
-		font-size:300%;
-		margin-left:25%;
-width:150%;
+		font-size: 300%;
+		margin-left: 25%;
+		width: 150%;
 	}
-
 	to {
-		margin-left:0%;
-width:100%;
+		margin-left: 0;
+		width: 100%;
 	}
 }
 
 @-webkit-keyframes slidein {
 	from {
-		margin-left:100%;
-width:300%
+		margin-left: 100%;
+		width: 300%;
 	}
-
 	75% {
-		font-size:300%;
-		margin-left:25%;
-width:150%;
+		font-size: 300%;
+		margin-left: 25%;
+		width: 150%;
 	}
-
 	to {
-		margin-left:0%;
-width:100%;
+		margin-left: 0%;
+		width: 100%;
 	}
 }
