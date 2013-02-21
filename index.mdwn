@@ -1,3 +1,4 @@
+<!-- Singapore hack and tell -->
 <div style="text-align: center;">
 <img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
 
@@ -28,11 +29,10 @@ Hackerspace</a>.</p>
 
 <hr>
 
-<footer> <p>Currently chaired by
+<footer>Currently chaired by
 <a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://twitter.com/vikramverma">@vikramverma</a> &diams;
 <a href="mailto:singapore@hackandtell.org">Email us</a> &diams;
 <a href="https://github.com/kaihendry/sg-hackandtell">MIT licensed source</a> &diams;
 <a href="/organisation">Organisation notes</a>
-</p>
 </footer>
 </div>

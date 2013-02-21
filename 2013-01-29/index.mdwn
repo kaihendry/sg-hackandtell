@@ -1,3 +1,4 @@
+<!-- Those who told on 2013-01-29 -->
 * Stephan February - [Aquaponics](http://www.aquaponics.sg)
 * [Michael Cheng](https://www.facebook.com/media/set/?set=a.10151385054432229.502084.503517228&type=1) - [PHP Queue in Action](https://speakerdeck.com/miccheng/php-queue-case-study-islamicevents-dot-sg)
 * [Patrick Haller](http://haller.ws/) - [Personal Space](http://haller.ws/projects/personal-space/)
