@@ -36,3 +36,4 @@ Hackerspace</a>.</p>
 <a href="/organisation">Organisation notes</a>
 </footer>
 </div>
+
