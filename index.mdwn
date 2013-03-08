@@ -2,7 +2,7 @@
 <div style="text-align: center;">
 <img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
 
-<h2 id="when">Next event: March 5th 2013</h2>
+<h2 id="when">Next event: March 5th 2013, 7PM-10PM</h2>
 <h2 id="where">Singapore Hackerspace</h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics</p>
