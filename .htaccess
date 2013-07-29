@@ -1,9 +1,14 @@
 DirectoryIndex index.html index.txt index.php
 Options -Indexes
+
 <FilesMatch "^\.">
 Order allow,deny
 Deny from all
 </FilesMatch>
+
 RewriteEngine On
 RewriteRule ^unsubscribe/([-A-z0-9]+)/?(.*)$ /list/unsubscribe.php?id=$1&why=$2 [L,QSA]
 RewriteRule ^unsub/([-A-z0-9]+)/?(.*)$ /list/subscribe.php?id=$1&why=$2 [L,QSA]
+
+ExpiresActive On
+ExpiresByType image/png "access plus 1 month"

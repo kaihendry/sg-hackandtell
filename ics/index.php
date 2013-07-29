@@ -7,6 +7,6 @@ fclose($fp);
 
 header('Content-type: text/calendar');
 
-readfile("ht.ics");
+readfile("CryptoParty.ics");
 
 ?>

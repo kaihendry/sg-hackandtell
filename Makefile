@@ -1,6 +1,7 @@
 # Suckless static site generator by hendry@iki.fi
 
 INFILES = $(shell find . -name "*.mdwn")
+#INFILES = $(shell git ls-files -- '*.mdwn')
 OUTFILES = $(INFILES:.mdwn=.html)
 
 all: $(OUTFILES)
