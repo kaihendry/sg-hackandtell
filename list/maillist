@@ -13,7 +13,7 @@ esubject="$(php -r "echo rawurlencode('$subject');")"
 for i in subs/*
 do
 	echo $(basename $i) $(awk '{print $NF}' $i)
-done | grep . $list | # replace hendry with . when you want to send it off
+done | grep hendry $list | # replace hendry with . when you want to send it off
 while read id email
 do
 	{ sed '1,/^$/d' $tmp | markdown
@@ -24,6 +24,7 @@ do
 	echo "</footer>"
 	} |
 	mutt -e "set content_type=text/html" \
+		 -e "my_hdr From: Hack and Tell Singapore <$replyto>" \
 		 -e "my_hdr Reply-To: $replyto" \
 		 -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
 	if test "$?" -eq 0

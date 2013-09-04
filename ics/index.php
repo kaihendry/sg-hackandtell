@@ -7,6 +7,6 @@ fclose($fp);
 
 header('Content-type: text/calendar');
 
-readfile("CryptoParty.ics");
+readfile("hacktell-singapore.ics");
 
 ?>
