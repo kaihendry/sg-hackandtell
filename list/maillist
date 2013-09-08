@@ -24,8 +24,7 @@ do
 	echo "</footer>"
 	} |
 	mutt -e "set content_type=text/html" \
-		 -e "my_hdr From: Hack and Tell Singapore <$replyto>" \
-		 -e "my_hdr Reply-To: $replyto" \
+		 -e "my_hdr Reply-To: Hack and Tell Singapore <$replyto>" \
 		 -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
 	if test "$?" -eq 0
 	then

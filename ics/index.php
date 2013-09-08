@@ -6,7 +6,6 @@ fwrite($fp, date("c") . " " . gethostbyaddr($_SERVER['REMOTE_ADDR']) . " " . $_S
 fclose($fp);
 
 header('Content-type: text/calendar');
-
 readfile("hacktell-singapore.ics");
 
 ?>

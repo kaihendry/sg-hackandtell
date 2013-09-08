@@ -5,7 +5,7 @@
 <h2 id="when">Next event: September 10th 2013, 8PM-10PM</h2>
 <h2 id="where">Singapore Hackerspace</h2>
 
-<p>iCalendar, Add by URL: http://sg.hackandtell.org/ics</p>
+<p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
 
 <form action="list/unsubscribe.php" method=post>
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address"/>
