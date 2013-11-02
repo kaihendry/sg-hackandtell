@@ -1,0 +1,47 @@
+# Hack and Tell, 2013-09-10
+
+<img src="img/1378819201.jpg" alt="cheaaun presenting" width="500" height="375">
+
+Dude, it was *awesome*, you totally missed out:
+
+  - [Kai Hendry](http://hendry.iki.fi) described how he and [Adnan
+    Jaludin](http://code.google.com/u/104517877938669365758) rigged up
+    a [Raspberry Pi](http://www.raspberrypi.org/) to log the temperature of the
+    Hackerspace. There are [graphs](http://stats.webconverger.org/pihsg/temp/google.html)! 
+    There is also [code](https://github.com/kaihendry/rpitemp). 
+
+  - [Yours Truly](http://vikramverma.com) demoed a tiny parser he wrote to load
+    Kindle clipping files into [Mnemosyne](http://mnemosyne-proj.org/),
+    so he doesn't forget specifics of the books he reads.
+
+  - [Ted Chen](http://sg.linkedin.com/in/chiuhaochen) described an audio
+    steganography project; he and his team embedded a VLF beacon into a music
+    file. Kind of like how Lucius Fox mapped Gotham in [The Dark Knight
+    (2008)](http://www.imdb.com/title/tt0468569/)?!?!  An earlier demo is
+    [here](http://www.youtube.com/watch?v=TDCOjgkPfaU).
+
+  - [Melvin Zhang](http://melvinzhang.net/) talked about a collection of
+    AI programs he's developed to play [Magic: The Gathering](http://en.wikipedia.org/wiki/Magic:_The_Gathering). 
+    You should check out [Magarena](https://code.google.com/p/magarena/).
+
+  - [Shaun Martin](http://www.appliedcognitivescience.com/) walked
+    through two very different programs to print the Fibonnaci sequence
+    in Haskell. Stuff's mind-blowing.
+
+  - [Chinmay Pendharkar](http://chinpen.net/) gave us a brief
+    introduction to the Web Audio API. His complete slides are
+    [here](http://notthetup.github.io/webaudioslides/), but we only had time
+    for a compressed version of that.
+
+  - [Lim Chee Aun](http://cheeaun.com/) returned to give us a progress
+    report on his [Bus Route Explorer](http://cheeaun.github.io/busrouter-sg/), 
+    a web application to view the routes of Singapore's bus services. You
+    should play with it, it is the best thing.
+
+  - [Phil Mockridge](http://squashpassion.com/) explained that his customers
+    can pay for lessons with [Bitcoin](http://bitcoin.org/), which is pretty
+    cool I guess?!?
+
+There's always next time..
+
+<3,
