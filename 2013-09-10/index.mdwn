@@ -1,7 +1,5 @@
 # Hack and Tell, 2013-09-10
 
-<img src="img/1378819201.jpg" alt="cheaaun presenting" width="500" height="375">
-
 Dude, it was *awesome*, you totally missed out:
 
   - [Kai Hendry](http://hendry.iki.fi) described how he and [Adnan
@@ -45,3 +43,5 @@ Dude, it was *awesome*, you totally missed out:
 There's always next time..
 
 <3,
+
+<img src="img/1378819201.jpg" alt="cheaaun presenting" width="500" height="375">

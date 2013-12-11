@@ -2,8 +2,8 @@
 <div style="text-align: center;">
 <img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
 
-<h2 id="when">Next event: September 10th 2013, 8PM-10PM</h2>
-<h2 id="where">Singapore Hackerspace</h2>
+<h2 id="when">Next event: December 10th 2013, 8PM-10PM</h2>
+<h2 id="where"><a href=http://hackerspace.sg/>Singapore Hackerspace</a> @<abbr title="King George's Building">KGB</abbr></h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
 
@@ -11,11 +11,6 @@
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address"/>
 <input name=submit type=submit value="Be notified of our next event"/>
 </form>
-
-<p>We are <a
-href="http://hackerspacesg.pbworks.com/w/page/44367892/Arranging-Events">limited
-to ~40 hackers</a> at the <a href="http://hackerspace.sg/">Singapore
-Hackerspace</a>.</p>
 
 <div style="text-align: left;">
 <h3>Those who told</h3>

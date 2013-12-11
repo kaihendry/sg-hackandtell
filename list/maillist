@@ -16,12 +16,15 @@ do
 done | grep hendry $list | # replace hendry with . when you want to send it off
 while read id email
 do
-	{ sed '1,/^$/d' $tmp | markdown
+	{
+	cat template-top.html
+	sed '1,/^$/d' $tmp | markdown
 	echo '<hr style="border-top: 2px dashed #322f32;" />'
 	echo '<footer style="font-size: small;">'
 	cat reminder.html
 	echo "<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject>http://$domain/unsubscribe/$id/$subject</a></p>"
 	echo "</footer>"
+	cat template-bottom.html
 	} |
 	mutt -e "set content_type=text/html" \
 		 -e "my_hdr Reply-To: Hack and Tell Singapore <$replyto>" \
