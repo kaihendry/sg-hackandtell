@@ -1,6 +1,8 @@
 Hack and Tell, 2013-12-10
 =========================
 
+<img src=cam.jpg alt="Images from the sPICAM">
+
 From empty editor buffers came:
 
   - [A simple image uploader](http://up.dabase.com/) authored by [Kai
