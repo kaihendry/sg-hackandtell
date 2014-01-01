@@ -28,7 +28,7 @@
 <hr>
 
 <footer>Currently chaired by
-<a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://twitter.com/vikramverma">@vikramverma</a> &diams;
+<a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://github.com/fmap">vi</a> &diams;
 <a href="mailto:singapore@hackandtell.org">Email us</a> &diams;
 <a href="https://github.com/kaihendry/sg-hackandtell">MIT licensed source</a> &diams;
 <a href="/organisation">Organisation notes</a>
