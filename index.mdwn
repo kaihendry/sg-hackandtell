@@ -2,7 +2,7 @@
 <div style="text-align: center;">
 <img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
 
-<h2 id="when">Next event: December 10th 2013, 8PM-10PM</h2>
+<h2 id="when">Next event: January 28th, 8PM-10PM</h2>
 <h2 id="where"><a href=http://hackerspace.sg/>Singapore Hackerspace</a> @<abbr title="King George's Building">KGB</abbr></h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
@@ -28,7 +28,7 @@
 <hr>
 
 <footer>Currently chaired by
-<a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://twitter.com/vikramverma">@vikramverma</a> &diams;
+<a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://github.com/fmap">vi</a> &diams;
 <a href="mailto:singapore@hackandtell.org">Email us</a> &diams;
 <a href="https://github.com/kaihendry/sg-hackandtell">MIT licensed source</a> &diams;
 <a href="/organisation">Organisation notes</a>
