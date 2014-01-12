@@ -6,7 +6,7 @@ if test $(date +%Y%m%d) -gt "${YYYYMMDD:-0}"; then
 	exit 1
 fi
 
-cat <<EOF | sed 's/^ *//'
+cat <<EOF | sed 's,^[[:space:]]*,,'
 	BEGIN:VCALENDAR
 	VERSION:2.0
 	PRODID:-//Hack and Tell//NONSGML v1.0//EN
