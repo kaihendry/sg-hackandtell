@@ -13,7 +13,7 @@ That period between New year and <abbr title="Chinese New Year">CNY</abbr> comet
 * Chinmay - [Auralizr](http://notthetup.github.io/auralizr/)
 * Sayanee - <https://github.com/sayanee/angularjs-pdf>
 * Kai Hendry - <http://speed.dabase.com/> attempting to grok speed units and compare them
-* Melvin - <abbr title="Magic the Gathering">MOTG</abbr> best player calculation
+* Melvin Zhang - <a href="https://code.google.com/p/magarena/wiki/AIComparison"><abbr title="Magic the Gathering">MOTG</abbr> best player calculation</a>
 * Vikram - Music Super Hexagon (generating X colour schemes from a vim coour scheme IIUC)
 * Sebastiaan Deckers - <http://devmerge.COM>
 * Seb & Meng - <http://legal.cf.sg> startup legal boiler plates
