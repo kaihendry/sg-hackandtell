@@ -9,7 +9,7 @@
 That period between New year and <abbr title="Chinese New Year">CNY</abbr> cometh:
 
 * Meng Wong - [SG Postcodes as RGB Hexcodes](https://docs.google.com/presentation/d/1YUhpbnoEUKGHXuj2tUVSAixp1B_PJlPVkap1eXfEwgQ/edit#slide=id.p)
-* Patrick Haller - Rental Yield calculation and http://dead-bars.tumblr.com/
+* Patrick Haller - [Singapore Rental Yield calculation](http://haller.ws/sg-pe/ura-rent-buy.html) and http://dead-bars.tumblr.com/
 * Chinmay - [Auralizr](http://notthetup.github.io/auralizr/)
 * Sayanee - <https://github.com/sayanee/angularjs-pdf>
 * Kai Hendry - <http://speed.dabase.com/> attempting to grok speed units and compare them
