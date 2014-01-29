@@ -11,3 +11,5 @@ body {
 .un {
 	color: red;
 }
+
+img { max-width: 100% }

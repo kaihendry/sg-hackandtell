@@ -1,0 +1,20 @@
+6th Singapore Hack and Tell, 2014-01-28
+=======================================
+
+<img src=ht.jpg alt="Photo from Michael Cheng's Facebook feed">
+<img src=ht2.jpg alt="Photo from Michael Cheng's Facebook feed">
+<img src=ht3.jpg alt="Photo from Michael Cheng's Facebook feed">
+<img src=ht4.webp alt="Image from the sPICAM">
+
+That period between New year and <abbr title="Chinese New Year">CNY</abbr> cometh:
+
+* Meng Wong - [SG Postcodes as RGB Hexcodes](https://docs.google.com/presentation/d/1YUhpbnoEUKGHXuj2tUVSAixp1B_PJlPVkap1eXfEwgQ/edit#slide=id.p)
+* Patrick Haller - Rental Yield calculation and http://dead-bars.tumblr.com/
+* Chinmay - [Auralizr](http://notthetup.github.io/auralizr/)
+* Sayanee - <https://github.com/sayanee/angularjs-pdf>
+* Kai Hendry - <http://speed.dabase.com/> attempting to grok speed units and compare them
+* Melvin - <abbr title="Magic the Gathering">MOTG</abbr> best player calculation
+* Vikram - Music Super Hexagon (generating X colour schemes from a vim coour scheme IIUC)
+* Sebastiaan Deckers - <http://devmerge.COM>
+* Seb & Meng - <http://legal.cf.sg> startup legal boiler plates
+* Danie announcing <http://piclubsg.com/index.php/participate-raspithon-sg-2014/>
