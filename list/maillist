@@ -1,40 +1,81 @@
 #!/bin/bash
-# Designed to send off your blogs that no one can be bothered to setup a RSS feeder with
-# Pipe from mutt
 
 domain="sg.hackandtell.org"
-replyto="singapore@hackandtell.org"
 
-tmp=$(mktemp)
-cat | sed 's,URL: \(.*\),URL: <\1>,'  > $tmp # for bottom r2e line for markdown
-subject="$(grep -m 1 '^Subject: ' $tmp | sed 's/^Subject: *//')"
+mdwn=$1
+if ! test -e "$mdwn"
+then
+	echo "No markdown file as an argument !"
+	exit 1
+fi
+
+subject="$(grep -m 1 '^Subject: ' $mdwn | sed 's/^Subject: *//')"
+if ! test "$subject"
+then
+	echo "No subject !"
+	exit 1
+fi
 esubject="$(php -r "echo rawurlencode('$subject');")"
+boundary=$(openssl rand -hex 24)
 
 for i in subs/*
 do
 	echo $(basename $i) $(awk '{print $NF}' $i)
-done | grep . $list | # replace hendry with . when you want to send it off
+done | grep hendry $list | # replace hendry with . when you want to send it off
 while read id email
 do
 	{
-	cat template-top.html
-	sed '1,/^$/d' $tmp | markdown
-	echo '<hr style="border-top: 2px dashed #322f32;" />'
-	echo '<footer style="font-size: small;">'
-	cat reminder.html
-	echo "<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject>http://$domain/unsubscribe/$id/$subject</a></p>"
-	echo "</footer>"
-	cat template-bottom.html
-	} |
-	mutt -e "set content_type=text/html" \
-		 -e "my_hdr Reply-To: Hack and Tell Singapore <$replyto>" \
-		 -e "my_hdr List-Unsubscribe: <http://$domain/unsub/$id/$esubject>" -s "$subject" $email
-	if test "$?" -eq 0
-	then
-		echo OK $id $email
-	else
-		echo ERROR $email http://$domain/unsub/$id/failed-to-send
-	fi
+cat << END
+From: Kai Hendry <hendry@dabase.com>
+To: $email
+Subject: $subject
+Reply-To: Hack and Tell Singapore <singapore@hackandtell.org>
+List-Unsubscribe: <http://$domain/unsub/$id/$esubject>
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Type: multipart/alternative; boundary=$boundary
+
+--$boundary
+Content-Type: text/plain; charset=UTF-8
+
+END
+
+cat $mdwn | sed '1,/^$/d'
+
+cat << END
+--
+Hack and tell Singapore is a meeting to share what you've been hacking upon.
+This list is for announcing the next meetups.
+Unsubscribe: http://$domain/unsubscribe/$id/$esubject
+
+--$boundary
+Content-Type: text/html; charset=UTF-8
+
+END
+
+cat template-top.html
+sed '1,/^$/d' $mdwn | markdown
+cat << END
+<hr style="border-top: 2px dashed #322f32;" />
+<footer style="font-size: small;">
+<p><a href="http://sg.hackandtell.org">Hack and tell Singapore</a> is a meeting to share what you've been hacking upon.</p>
+<strong>This list is for announcing the next meetups.</strong>
+<p>Unsubscribe: <a href=http://$domain/unsubscribe/$id/$esubject>http://$domain/unsubscribe/$id/$subject</a></p>
+</footer>
+END
+cat template-bottom.html
+cat << END
+--$boundary--
+END
+	} | sendmail -t
+
+if test "$?" -eq 0
+then
+	echo OK $id $email
+else
+	# Only shows synchronous errors like TO: missing
+	echo ERROR $email http://$domain/unsub/$id/failed-to-send
+fi
+
 done
 
-rm -f $tmp
