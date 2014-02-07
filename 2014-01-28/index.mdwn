@@ -12,7 +12,7 @@ That period between New year and <abbr title="Chinese New Year">CNY</abbr> comet
 * Sayanee - <https://github.com/sayanee/angularjs-pdf>
 * Kai Hendry - <http://speed.dabase.com/> attempting to grok speed units and compare them
 * Melvin Zhang - <a href="https://code.google.com/p/magarena/wiki/AIComparison"><abbr title="Magic the Gathering">MOTG</abbr> best player calculation</a>
-* Vikram - Music Super Hexagon (generating X colour schemes from a vim coour scheme IIUC)
+* Vikram - Music Super Hexagon, colour translation code is at <https://github.com/fmap/wright>. The related track download scripts are in <https://github.com/fmap/vi-bin> (related, ftrack, mktape)
 * Sebastiaan Deckers - <http://devmerge.COM>
 * Seb & Meng - <http://legal.cf.sg> startup legal boiler plates
 * Danie announcing <http://piclubsg.com/index.php/participate-raspithon-sg-2014/>
