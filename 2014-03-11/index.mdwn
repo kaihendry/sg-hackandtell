@@ -1,6 +1,8 @@
 7th Singapore Hack and Tell, 2014-03-11
 =======================================
 
+<img src=poster.jpg>
+
 1. <a href=michal.jpg>Michal</a> demoing Olimex, SDR board, 3D printing & ATMEL TINY
 * Puneet Dewan on his experience of remote controlling his PC from his mobile using J2ME which gave him valuable experience
 * <a href=soares.jpg>Soares</a> on [Quiver.JS](https://github.com/quiverjs)
@@ -13,7 +15,7 @@
 * <a href=http://haller.ws/>Patrick Haller</a> with his related <https://github.com/patrickhaller/bash-ssh-agent> which only serves the right key for the connecting host
 * Kai Hendry with [Crowd source video annotation](http://video.geekout.org.uk/) a tool to collect video metadata, to help with editing clips later
 * <a href=aizat.jpg>Aizat</a> - Maps IOS embedding
-* Karn on silent SMS Delivery Reports that can identity where you are
+* Karn on silent SMS Delivery Reports that can identify where you are
 
 
 ANN: Singapore [<abbr title="Autonomous underwater vehicle">AUV</abbr> challenge](http://ewh.ieee.org/r10/singapore/oes/sauvc/)
