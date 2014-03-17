@@ -3,7 +3,7 @@
 
 <img src=poster.jpg>
 
-1. <a href=michal.jpg>Michal</a> demoing Olimex, SDR board, 3D printing & ATMEL TINY
+1. <a href=michal.jpg>Michal</a> demoing Olimex, SDR board, 3D printing & [FOSDEM-85](https://www.olimex.com/Products/Duino/AVR/FOSDEM-85/open-source-hardware)
 * Puneet Dewan on his experience of remote controlling his PC from his mobile using J2ME which gave him valuable experience
 * <a href=soares.jpg>Soares</a> on [Quiver.JS](https://github.com/quiverjs)
 * <a href=shruthi.jpg>Shruthi Suresh</a> on the digital thermometer PCB she designed herself with <a href="https://en.wikipedia.org/wiki/EAGLE_(program)">Eagle</a>
