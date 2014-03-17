@@ -1,0 +1,22 @@
+7th Singapore Hack and Tell, 2014-03-11
+=======================================
+
+1. <a href=michal.jpg>Michal</a> demoing Olimex, SDR board, 3D printing & ATMEL TINY
+* Puneet Dewan on his experience of remote controlling his PC from his mobile using J2ME which gave him valuable experience
+* <a href=soares.jpg>Soares</a> on [Quiver.JS](https://github.com/quiverjs)
+* <a href=shruthi.jpg>Shruthi Suresh</a> on the digital thermometer PCB she designed herself with <a href="https://en.wikipedia.org/wiki/EAGLE_(program)">Eagle</a>
+* <a href=bjorn.jpg>Bjorn</a> with <http://www.openinghours.sg/>
+* <a href=wyemun.jpg>Wyemun</a> on <http://bentopark.com/>
+* <a href=http://chinpen.net/>Chinmay</a> - [Bird call synthesis](http://notthetup.github.io/birds/)
+* Dave with his PI TFT
+* chernjie on his ssh helper scripts, [sshp](https://github.com/chernjie/sshp)
+* <a href=http://haller.ws/>Patrick Haller</a> with his related <https://github.com/patrickhaller/bash-ssh-agent> which only serves the right key for the connecting host
+* Kai Hendry with [Crowd source video annotation](http://video.geekout.org.uk/) a tool to collect video metadata, to help with editing clips later
+* <a href=aizat.jpg>Aizat</a> - Maps IOS embedding
+* Karn on silent SMS Delivery Reports that can identity where you are
+
+
+ANN: Singapore [<abbr title="Autonomous underwater vehicle">AUV</abbr> challenge](http://ewh.ieee.org/r10/singapore/oes/sauvc/)
+
+
+<a href=irc.txt>IRC log</a>

@@ -1,0 +1,200 @@
+19:49 <hendry>  _   _    _    ____ _  __     _    _   _ ____    _____ _____ _     _     
+19:49 <hendry> | | | |  / \  / ___| |/ /    / \  | \ | |  _ \  |_   _| ____| |   | |    
+19:49 <hendry> | |_| | / _ \| |   | ' /    / _ \ |  \| | | | |   | | |  _| | |   | |    
+19:49 <hendry> |  _  |/ ___ \ |___| . \   / ___ \| |\  | |_| |   | | | |___| |___| |___ 
+19:49 <hendry> |_| |_/_/   \_\____|_|\_\ /_/   \_\_| \_|____/    |_| |_____|_____|_____|
+19:49 <hendry>                                                                          
+19:49 <hendry>  ____ _____  _    ____ _____ ____    ___ _   _   _____ _____ _   _ 
+19:49 <hendry> / ___|_   _|/ \  |  _ \_   _/ ___|  |_ _| \ | | |_   _| ____| \ | |
+19:49 <hendry> \___ \ | | / _ \ | |_) || | \___ \   | ||  \| |   | | |  _| |  \| |
+19:49 <hendry>  ___) || |/ ___ \|  _ < | |  ___) |  | || |\  |   | | | |___| |\  |
+19:49 <hendry> |____/ |_/_/   \_\_| \_\|_| |____/  |___|_| \_|   |_| |_____|_| \_|
+19:49 <hendry>                                                                    
+19:49 <hendry>  __  __ ___ _   _ _   _ _____ _____ ____  
+19:49 <hendry> |  \/  |_ _| \ | | | | |_   _| ____/ ___| 
+19:49 <hendry> | |\/| || ||  \| | | | | | | |  _| \___ \ 
+19:49 <hendry> | |  | || || |\  | |_| | | | | |___ ___) |
+19:49 <hendry> |_|  |_|___|_| \_|\___/  |_| |_____|____/ 
+19:49 <hendry>                                           
+19:52 <ponyfleisch> who wants to get shitfaced after h&t? :)
+20:00 -!- moose [~moose@202.172.56.40] has joined #hackerspacesg
+20:02 <ponyfleisch> pussies.
+20:03 <gaqzi> a beer or two, but not shitfaced today
+20:05 <hendry> Misha from Berlin up first
+20:05 <hendry> SDR and some other stuff
+20:06 <hendry> 3) 3D printing 
+20:06 <hendry> 4) ATMEL TINY
+20:06  * chernjie boo~
+20:07 <hendry> Shurthi gets two mini-arduinos
+20:07  * chernjie waves across the room to Nigel!
+20:09 <hendry> 2) OUMEX
+20:13 <hendry> Puneet Dewan
+20:13 <ponyfleisch> Micah?
+20:14 <hendry> michal
+20:14 <ponyfleisch> ah
+20:14 <chernjie> elfgoh: You owe me $50
+20:14 <moose> Did anyone reply about the chin up bar and where to drill the holes?
+20:15 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+20:15 <chernjie>  /whois moose
+20:16 <moose> Dinner??!!
+20:17 <notthetup> I'm moose!!
+20:17 <notthetup> :P
+20:17 <shannietron> moooo
+20:17 <moose> I'm moose
+20:17 <hendry> J2ME frustrations
+20:17 <notthetup> Olimex lah not Oumex
+20:17 <hendry> J2ME bluetooth
+20:18 <chernjie> we don't like Java/J2ME/MSWords
+20:18 <notthetup> System.out.println("hello world");
+20:19 -!- Qfwfq [~Qfwfq@unaffiliated/washirving] has joined #hackerspacesg
+20:19 -!- ngourlay [~AndChat87@202.172.56.40] has joined #hackerspacesg
+20:19 <moose> J2ME? The days where a 64kb binary was the norm
+20:19 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+20:20 <moose> and 320 x 240 screen was a luxury
+20:20 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+20:20 <chernjie> Puneet must be the first first person to speak about J2ME in hackerspace
+20:20 <notthetup> Lol
+20:21 <moose> Yeah, J2ME brings back memories for me. Not particularly good ones, though
+20:21 <ngourlay> J2me was a mess before android
+20:21 <chernjie> Also the first person to mention Java, J2ME and MSWords in the same sentence
+20:21 <moose> Yeah, J2ME was horrendous. Each manufacturer has their own implementation
+20:21 <notthetup> .Net hasnt be uttered yet
+20:22 <notthetup> Or MSSQL
+20:22 <notthetup> *shudders*
+20:22 <Qfwfq> The MS Word that shipped with CE is still the best text editor for programming.
+20:22 <moose> I remember Siemens phone has a JVM where the number of methods has to be < 128 or else it will throw an installation error
+20:22 <Qfwfq> It's a pity we haven't made any progress since then.
+20:22 <notthetup> Um hmmm
+20:22 <Qfwfq> Way before J2ME, even.
+20:23 <Qfwfq> Internet relay moaning.
+20:23 <moose> .NET rocks now compared to .NET 1.0
+20:24 <hendry> Soares up now with Quiver.js
+20:24 <Qfwfq> soares | tr 'A-Z' 'a-z'
+20:30 <ngourlay> http://arduino-tdd.blogspot.sg/2014/03/approximate-division-using.html
+20:30 <CurryPng> [ Arduino Test-Driven Development: Approximate division using multiplication and right-shift ] - arduino-tdd.blogspot.sg
+20:31 <ngourlay> Maybe talk about this after everyone else has done
+20:31 <notthetup> Yes please
+20:32 <notthetup> Sounds interesting
+20:33 <Qfwfq> I am also interested.
+20:35 <ngourlay> Do we have a dry marker for the white board?
+20:35 <hendry> Wyemun up next with his weekend project!
+20:36 <notthetup> Yes
+20:36 <notthetup> Might be behind the board
+20:37 <hendry> http://wyemun.com/ -> http://bentopark.com/
+20:37 <CurryPng> [ wyemun.com ] - wyemun.com
+20:37 <CurryPng> [ BentoPark ] - bentopark.com
+20:41 <notthetup> Spoken like a true Swede
+20:45 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+20:46 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+20:46 <chernjie> https://www.facebook.com/search/101883206519751/places-in/110290705711626/places/intersect
+20:46 <CurryPng> [ Introducing Graph Search | Facebook ] - www.facebook.com
+20:47 -!- mjga [~mjga@202.172.56.40] has joined #hackerspacesg
+20:48 <hendry> Bjorn http://www.openinghours.sg/
+20:48 <CurryPng> [ Opening Hours ] - www.openinghours.sg
+20:49 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+20:49 <hendry> Chinmay - Bird call synthesis
+20:51 <hendry> http://notthetup.github.io/birds/
+20:51 <CurryPng> [ Chirrrrp ] - notthetup.github.io
+20:51 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+20:51 <Qfwfq> https://github.com/notthetup/birds/
+20:51 <CurryPng> [ notthetup/birds · GitHub ] - github.com
+20:52 -!- sneakertack [~sneakerta@202.172.56.40] has joined #hackerspacesg
+20:55 <hendry> Dave with his PI TFT
+20:56 <chernjie> elfgoh: you owe me $50
+20:57 <Qfwfq> notthetup: Where did the frequency/attack/decay values in fm.js come from?
+20:57 <notthetup> Ahh!!
+20:57 <notthetup> Thats from the original model from obiwannab
+20:58 <notthetup> He has a puredata patch
+20:58 <Qfwfq> Oh, how'd he find them? :-D
+20:58 <notthetup> I'm guessing loads of hearing and testing
+20:59 <notthetup> Don't think its physical
+21:00 <Qfwfq> Well that's boring.
+21:00 <notthetup> Agreed
+21:02 <notthetup> But im curious about his procesa
+21:03 <notthetup> Since many values across various birds are exactly the same
+21:03 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:04 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:04 <notthetup> I'm wondering if there is some theory behind it
+21:06 <shannietron> reminds me of
+21:06 <shannietron> http://xkcd.com/1168/
+21:06 <CurryPng> [ xkcd: tar ] - xkcd.com
+21:06 <notthetup> :P
+21:07 -!- sb-obleal [CAAC3828@conference/jsconf/x-hnmfuxdtboquobuj] has joined #hackerspacesg
+21:07 <sb-obleal> @shannie that bomb is so easy to defuse
+21:07 <notthetup> :P
+21:09 <moose> lol
+21:11 -!- hyperair [~hyperair@ubuntu/member/hyperair] has joined #hackerspacesg
+21:11 -!- sb-ecrame [CAAC3828@conference/jsconf/x-faimiecfizojnwtz] has joined #hackerspacesg
+21:12 <sb-ecrame> bentopark is fixed ! :D
+21:12 <notthetup> Yay
+21:12 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:15 <hendry> chernjie: with his sshp project
+21:20 <hendry> Patrick Haller https://github.com/patrickhaller/bash-ssh-agent Only offer the specific private key to the server you're connecting to
+21:20 <CurryPng> [ patrickhaller/bash-ssh-agent · GitHub ] - github.com
+21:21 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:21 <notthetup> Much smooth
+21:22 <hendry> Rahul launches tmux
+21:22 <hendry> Aircons, controlling them!
+21:24 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:25 -!- hyperair [~hyperair@ubuntu/member/hyperair] has quit [Ping timeout: 264 seconds]
+21:25 <Qfwfq> With SOAP!
+21:25 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:26 <Qfwfq> Public service announcement: keep your aircons clean with soap and python.
+21:26 <notthetup> Hehe hehe
+21:27 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:28 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:34 -!- sb-obleal [CAAC3828@conference/jsconf/x-hnmfuxdtboquobuj] has left #hackerspacesg []
+21:36 -!- sb-ecrame [CAAC3828@conference/jsconf/x-faimiecfizojnwtz] has left #hackerspacesg []
+21:36 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:36 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:41 <notthetup> DO NOT WAANT
+21:42 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:46 -!- edmond_k3221 [~edmond_k3@200.53.156.163] has joined #hackerspacesg
+21:46 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:47 -!- Qfwfq [~Qfwfq@unaffiliated/washirving] has quit [Ping timeout: 244 seconds]
+21:48 -!- Qfwfq [~Qfwfq@202.172.56.40] has joined #hackerspacesg
+21:48 -!- Qfwfq [~Qfwfq@202.172.56.40] has quit [Changing host]
+21:48 -!- Qfwfq [~Qfwfq@unaffiliated/washirving] has joined #hackerspacesg
+21:49 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:50 <hendry> Kai Hendry http://video.geekout.org.uk/
+21:50 <CurryPng> [ Crowd source video annotation ] - video.geekout.org.uk
+21:51 <hendry> Aizat - Maps
+21:52 <hendry> Aizat - Maps IOS embedding
+21:52 <hendry> Delivery Reports can identity where you are
+21:55 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+21:58 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+21:58 <ngourlay> I'm going to have to run. Babysitter will be getting worried.
+21:59 <ngourlay> Next time, I'll talk.
+21:59 <Qfwfq> ngourlay: :-(
+21:59 -!- edmond_k3221 [~edmond_k3@200.53.156.163] has quit [Read error: Connection reset by peer]
+22:01 <hendry> Karn
+22:01 -!- shannietron [~shannietr@202.172.56.40] has joined #hackerspacesg
+22:01 <hendry> shannietron: what's the URL?
+22:02 -!- AndChat|87561 [~AndChat87@202.172.56.40] has joined #hackerspacesg
+22:02 -!- AndChat|87561 [~AndChat87@202.172.56.40] has quit [Client Quit]
+22:03 <shannietron> http://ewh.ieee.org/r10/singapore/oes/sauvc/
+22:03 -!- sneakertack [~sneakerta@202.172.56.40] has left #hackerspacesg []
+22:04 -!- shannietron [~shannietr@202.172.56.40] has quit [Remote host closed the connection]
+22:06 -!- ngourlay [~AndChat87@202.172.56.40] has quit [Ping timeout: 252 seconds]
+22:07 -!- Qfwfq [~Qfwfq@unaffiliated/washirving] has quit [Ping timeout: 264 seconds]
+22:08 -!- mjga [~mjga@202.172.56.40] has quit [Ping timeout: 265 seconds]
+22:10 -!- jmarki_eek [~jmarki@103.11.49.49] has joined #hackerspacesg
+22:10 -!- jmarki [~jmarki@103.11.49.49] has joined #hackerspacesg
+22:17 -!- margaretta_w984 [~margarett@200.53.156.237] has joined #hackerspacesg
+22:24 -!- jmarki_eek [~jmarki@103.11.49.49] has quit [Quit: Leaving]
+22:26 -!- moose [~moose@202.172.56.40] has quit [Remote host closed the connection]
+22:37 -!- moose [~moose@202.172.56.40] has joined #hackerspacesg
+22:45 -!- ngourlay [~ngourlay@cm52.sigma223.maxonline.com.sg] has joined #hackerspacesg
+22:55 <ngourlay> I feel like such a wimp, not doing my 5 minutes. Standing up in front of people is probably cathartic.
+23:34 -!- hyperair [~hyperair@ubuntu/member/hyperair] has joined #hackerspacesg
+23:42 <notthetup> ngourlay: do it!!!!
+23:42 <notthetup>  ngourlay I was wondering what happened.. :(
+23:48 <ngourlay> I had to rush back for the babysitter, but was also dreading standing up in front of a room full of (mostly) strangers.
+23:49 <ngourlay> Next time, I'll come better prepared, if I have anything to share.
+23:50 <ngourlay> I'm doing a lot of reading at the moment - one of the side-effects of looking after a 4-year-old.
+23:51 <ngourlay> Coding requires a few hours of uninterrupted time. Reading takes 10 minutes on the toilet.
+23:51 <ngourlay> At least, in my world this is true.
+23:53 -!- jmarki [~jmarki@103.11.49.49] has quit [Remote host closed the connection]
+23:54 <ngourlay> But Knuth has this thing abour multiplying permutations that is _so_ close to being useful in shift registers.
+23:55 <ngourlay> I might have figured that out by next months. Or I might not.
+-
