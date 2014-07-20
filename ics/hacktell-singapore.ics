@@ -2,11 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Hack and Tell//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:1393416620500226198@sg.hackandtell.org
+UID:1398221597782893061@sg.hackandtell.org
 SUMMARY:Hack and Tell
 LOCATION:Hackerspace.SG, 344B King George's Avenue
 DESCRIPTION:Show and tell for hackers. Five minute demos, each followed by 5 minutes of Q&A.
-DTSTART;TZID=Asia/Singapore:20140311T200000
-DTEND;TZID=Asia/Singapore:20140311T220000
+DTSTART;TZID=Asia/Singapore:20140501T200000
+DTEND;TZID=Asia/Singapore:20140501T220000
 END:VEVENT
 END:VCALENDAR

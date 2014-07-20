@@ -2,7 +2,7 @@
 <div style="text-align: center;">
 <img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
 
-<h2 id="when">Next event: March 11th, 8PM-10PM</h2>
+<h2 id="when">Next event: Subscribe below to get the announcement</h2>
 <h2 id="where"><a href=http://hackerspace.sg/>Singapore Hackerspace</a> @<abbr title="King George's Building">KGB</abbr></h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
@@ -22,6 +22,8 @@
 <li><a href="2013-09-10">2013-09-10</a></li>
 <li><a href="2013-12-10">2013-12-10</a></li>
 <li><a href="2014-01-28">2014-01-28</a></li>
+<li><a href="2014-03-11">2014-03-11</a></li>
+<li><a href="2014-05-01">2014-05-01</a></li>
 </ul>
 
 </div>
