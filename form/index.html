@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-2.0.2.min.js"></script>
+<script>
+
+$(document).ready(function(){
+$("#submit").on("click", function() {
+$("li").each(function(){ if($(this).find('.names').val()) { $(this).find('.identities').attr('required', true)}  });
+})
+}
+)
+
+</script>
+<title>If names field, identity required</title>
+</head>
+<form method=post action=http://software.hixie.ch/utilities/cgi/test-tools/echo>
+<ol>
+<li>
+<input class=identities name=ids[]>
+<input class=names name=names[]>
+</li>
+<li>
+<input class=identities name=ids[]>
+<input class=names name=names[]>
+</li>
+</ol>
+<input id=submit type=submit>
+</form>
+</html>
