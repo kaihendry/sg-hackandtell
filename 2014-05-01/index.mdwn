@@ -5,6 +5,17 @@
 <img src=hsg-ht-roof.jpg alt="Hack and tell on the roof">
 </a>
 
-First [HSG event on the roof](https://groups.google.com/d/msg/hackerspacesg/-3mO6fZTCAw/nQtzBOe3w6IJ).
+First [HSG event on the roof](https://groups.google.com/d/msg/hackerspacesg/-3mO6fZTCAw/nQtzBOe3w6IJ)!
 
 View the [Flickr set](https://www.flickr.com/photos/hendry/sets/72157644513922193).
+
+(Apologies for the incomplete wrapup notes, the wifi didn't reach adequately so there was no live IRC logging!)
+
+* Roland on <a href="http://rolandturner.com/yahi/"><abbr title="Yet Another Haze Index">YAHI</abbr></a>
+* Chinmay on <abbr title="Software Defined Radio">SDR</abbr>
+	* <https://github.com/antirez/dump1090>
+	* <http://sdr.osmocom.org/trac/wiki/rtl-sdr>
+	* <http://gnuradio.org/redmine/projects/gnuradio/wiki>
+	* <http://www.rtl-sdr.com/>
+* Michael on <https://github.com/mgajda/json-autotype>
+* Melvin with a [Pair calendar for couples](http://cosh.io)
