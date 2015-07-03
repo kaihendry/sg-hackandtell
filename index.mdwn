@@ -1,7 +1,7 @@
 <!-- Singapore hack and tell -->
 <header>
 <img alt="Show and tell for Hackers" src="/images/logo.svg">
-<h2 id="when">Next event: TBA</h2>
+<h2 id="when">Next event: <abbr title="To be announced">TBA</abbr></h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
 
@@ -28,7 +28,6 @@
 <li><a href="2015-07-02">2015-07-02</a></li>
 </ol>
 
-
 <hr>
 
 <footer>
@@ -36,8 +35,8 @@
 <a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://github.com/fmap">vi</a> &diams;
 <a href="mailto:singapore@hackandtell.org">Email us</a> &diams;
 <a href="https://github.com/kaihendry/sg-hackandtell">MIT licensed source</a> &diams;
-<a href="/organisation">Organisation notes</a>
-<a href="https://validator.nu/?doc=http://sg.hackandtell.org/">Valid HTML</a>
+<a href="/organisation">Organisation notes</a> &diams;
+<a href="https://validator.nu/?doc=http://sg.hackandtell.org/">Valid HTML</a> &diams;
 <a href="https://developers.google.com/speed/pagespeed/insights/?url=http://sg.hackandtell.org/">fast!</a>
 </p>
 </footer>
