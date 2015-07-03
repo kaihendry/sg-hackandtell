@@ -1,0 +1,15 @@
+10th Singapore Hack and Tell, 2015-07-02
+========================================
+
+<img src="meta-room-make-public.jpg" alt="meta-room made public">
+
+* Stephan on video hosting at a leading payments company
+* Kai on problems with the JSON of the LTA arrivals API - [creepy video](https://youtu.be/CaSTJM5UEj8)
+* Jia Hen on <https://github.com/wizztjh/metaroom-markup>, for 3D HTML markup of a room
+* Sayanee on [Webuild's API](https://github.com/webuildsg/webuild#api-version-1) & a [OSX menubar](https://github.com/webuildsg/osx), which is based on [electon](http://electron.atom.io/)
+* Wyemun on <http://caast.me/>, a way of sharing a URL on a phone to the desktop with QR codes
+* [Melvin](http://melvinzhang.net/) on [AI (rule based) tic tac toe](https://github.com/melvinzhang/rule-based-ttt)
+* Chinmay on <http://chinpen.net/resampler/>
+* Lucian on resistance
+* Hoàng Xuân Phú on <https://github.com/phunehehe/IntentBridge>, a way of interacting with Android services from or to the Web
+* Rahul on running VMs on OSX

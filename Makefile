@@ -11,7 +11,8 @@ all: $(OUTFILES)
 	@# First seen comment becomes page title
 	@sed -n  '/<!--/{s/<!-- *//;s/ *-->//;p;q; }' $< >> $@
 	@echo "</title></head><body>" >> $@
-	@markdown $< >> $@
+	# https://github.com/jgm/CommonMark
+	@cmark $< >> $@
 	@cat footer.inc >> $@
 	@echo $< '→' $@
 

@@ -1,9 +1,7 @@
 <!-- Singapore hack and tell -->
-<div style="text-align: center;">
-<img width=139 height=134 alt="Show and tell for Hackers" src="/images/logo.png">
-
-<h2 id="when">Next event: September 30th, 8PM-10PM</h2>
-<h2 id="where"><a href=http://hackerspace.sg/>Singapore Hackerspace</a> @<abbr title="King George's Building">KGB</abbr></h2>
+<header>
+<img alt="Show and tell for Hackers" src="/images/logo.svg">
+<h2 id="when">Next event: TBA</h2>
 
 <p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
 
@@ -12,10 +10,12 @@
 <input name=submit type=submit value="Be notified of our next event"/>
 </form>
 
-<div style="text-align: left;">
+
+</header>
+
 <h3>Those who told</h3>
 
-<ul>
+<ol>
 <li><a href="2012-12-05">2012-12-05</a></li>
 <li><a href="2013-01-29">2013-01-29</a></li>
 <li><a href="2013-03-05">2013-03-05</a></li>
@@ -24,17 +24,20 @@
 <li><a href="2014-01-28">2014-01-28</a></li>
 <li><a href="2014-03-11">2014-03-11</a></li>
 <li><a href="2014-05-01">2014-05-01</a></li>
-</ul>
+<li><a href="2014-09-30">2014-09-30</a></li>
+<li><a href="2015-07-02">2015-07-02</a></li>
+</ol>
 
-</div>
 
 <hr>
 
-<footer>Currently chaired by
+<footer>
+<p>Currently chaired by
 <a href="https://twitter.com/kaihendry">@kaihendry</a> &amp; <a href="https://github.com/fmap">vi</a> &diams;
 <a href="mailto:singapore@hackandtell.org">Email us</a> &diams;
 <a href="https://github.com/kaihendry/sg-hackandtell">MIT licensed source</a> &diams;
 <a href="/organisation">Organisation notes</a>
+<a href="https://validator.nu/?doc=http://sg.hackandtell.org/">Valid HTML</a>
+<a href="https://developers.google.com/speed/pagespeed/insights/?url=http://sg.hackandtell.org/">fast!</a>
+</p>
 </footer>
-</div>
-

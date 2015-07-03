@@ -1,0 +1,14 @@
+9th Singapore Hack and Tell, 2014-09-30
+=======================================
+
+<img src=nkorea.jpg alt="Owen Jones setting up">
+
+1. Kai Hendry told about his latest golang project <https://github.com/kaihendry/lk>, a Web based local image viewer
+* Owen Jones talks about his strandbeest and his trip to North Korea
+* Björn Andersson (gaqzi) talked about <https://github.com/gaqzi/ansible-inventory/blob/master/ansible_inventory/digital_ocean.py>
+* Jason talked about how it's possible to convert Flash games to HTML
+* [Alyssa](http://alyssaquek.blogspot.sg/) talked about her [Soylent](http://www.soylent.me/) experiences! (May reduce flatulence... after a week)
+* Claudio (ponyfleisch) talked about a [Hackerspace in Europe](http://sandkasten.sg/), since he was away there for a couple of months
+* Michael proposed some ridiculous starfest where we would star each repos to help raise the profile of local Singaporean developers
+
+<img src=mcheng.jpg alt="Michael Cheng talking about github stars">
