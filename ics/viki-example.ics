@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hack and Tell//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:1498207196527087054@sg.hackandtell.org
+SUMMARY:Hack && Tell Singapore at Viki!
+LOCATION:Viki, 138 Market St #32-01, 048968 Singapore
+DESCRIPTION:Show and tell for hackers. Slots are 10 minutes long (5 minutes presentation + 5 minutes Q&A)
+DTSTART;TZID=Asia/Singapore:20170718T190000
+DTEND;TZID=Asia/Singapore:20170718T210000
+END:VEVENT
+END:VCALENDAR

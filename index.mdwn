@@ -3,7 +3,7 @@
 <img alt="Show and tell for Hackers" src="/images/logo.svg">
 <h2 id="when">Next event: <abbr title="To be announced">TBA</abbr></h2>
 
-<p>iCalendar, Add by URL: http://sg.hackandtell.org/ics/</p>
+<p>iCalendar, Add by URL: <a href=/ics/>http://sg.hackandtell.org/ics/</a></p>
 
 <form action="list/unsubscribe.php" method=post>
 <input required=required type=email name=email title="We will never sell or distribute your email address" placeholder="Your email address"/>
